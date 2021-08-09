@@ -27,7 +27,9 @@ Deployment environments are in `live`. Modules used by deployments are in `modul
 The modules have been compressed to a zip file to mimic downloading it from a remote source, otherwise .terraform-version files are not pulled.
 
 ## Usage
-Enter the environment, either `prod` or `non-prod` and run terragrunt:
+Enter the environment, either `prod` or `non-prod` and run terragrunt. 
+Terragrunt will download the `module` defined in `terragrunt.hcl`. When applying, one can observe that the terraform version as defined by the relevant modules' `.terraform-version` is used.
+
 ```
 $ cd live/non-prod
 $ terragrunt init
@@ -89,5 +91,3 @@ Outputs:
 
 hello = "non-prod Earth!"
 ```
-
-Terragrunt will download the `module` defined in `terragrunt.hcl`. When applying, one can observe that the terraform version as defined by the relevant modules' `.terraform-version` is used.
