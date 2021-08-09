@@ -34,4 +34,4 @@ $ terragrunt init
 $ terragrunt apply -auto-approve
 ```
 
-Terragrunt will download the `module` defined in `terragrunt.hcl`. When applying the one can observe that the terraform version as defined by the relevant modules' `.terraform-version` is used.
+Terragrunt will download the `module` defined in `terragrunt.hcl`. When applying, one can observe that the terraform version as defined by the relevant modules' `.terraform-version` is used.
