@@ -1,4 +1,4 @@
-# tgenv_tfenv
+# terragrunt_tfenv
 This is to test out the compatibility of tfenv when used in terragrunt.
 
 Deployment environments are in `live`. Modules used by deployments are in `modules`.
